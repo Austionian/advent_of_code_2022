@@ -7,7 +7,7 @@ fn main() -> Result<()> {
     let unused = 25_725_669;
     let min_needed = 30_000_000 - unused;
 
-    let input = include_str!("./input.test")
+    let input = include_str!("./day7_input.txt")
         .split('\n')
         .collect::<Vec<&str>>();
 
@@ -50,7 +50,7 @@ fn main() -> Result<()> {
 //
 //     let min_needed = used - needed;
 //
-//     let input = include_str!("./input.test")
+//     let input = include_str!("./day7_input.txt")
 //         .split('\n')
 //         .collect::<Vec<&str>>();
 //
