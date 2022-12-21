@@ -20,7 +20,7 @@ fn main() -> Result<()> {
     let mut seen_points = HashSet::new();
     let mut knots = vec![];
 
-    for i in 0..9 {
+    for _ in 0..9 {
         knots.push(Point { x: 0, y: 0 })
     }
 

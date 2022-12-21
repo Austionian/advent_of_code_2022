@@ -1,7 +1,7 @@
 use anyhow::Result;
 
 fn main() -> Result<()> {
-    let mut collection = include_str!("./input.test")
+    let mut collection = include_str!("./day1_input.txt")
         .split("\n\n")
         .map(|x| x.lines().flat_map(str::parse::<usize>).sum::<usize>())
         .collect::<Vec<usize>>();
@@ -15,7 +15,7 @@ fn main() -> Result<()> {
 }
 
 fn part_one() -> Result<()> {
-    let max = include_str!("./input.test")
+    let max = include_str!("./day1_input.txt")
         .split("\n\n")
         .map(|x| {
             return x.split('\n').flat_map(str::parse::<usize>).sum::<usize>();
