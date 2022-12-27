@@ -2,9 +2,6 @@ use anyhow::Result;
 use std::collections::HashMap;
 
 fn find_value(name: &str, coll: &HashMap<&str, &str>) -> isize {
-    if name == "humn" {
-        return 0;
-    }
     let value = coll.get(name);
 
     match value {
@@ -55,12 +52,12 @@ fn parse_line(line: &str) -> (&str, &str, &str) {
 }
 
 fn main() -> Result<()> {
-    let coll: HashMap<_, _> = include_str!("./day21_input.txt")
+    let coll: HashMap<_, _> = include_str!("./day21_test_input.txt")
         .lines()
         .map(|line| line.split_once(": ").unwrap())
         .collect();
 
-    let result = find_value("root", &coll);
+    let result = find_value("humn", &coll);
 
     println!("{}", result);
 
